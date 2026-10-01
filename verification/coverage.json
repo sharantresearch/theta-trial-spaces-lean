@@ -1,6 +1,6 @@
 {
   "paper_title": "Explicit theta trial spaces for the truncated Weil quadratic form",
-  "paper_sha256": "44ee39fb27f52a7bfefda54e41ef2879eb4b6d21d6691975e811c51f7e728b25",
+  "paper_sha256": "568479dd8c50e2c0e5250f2eff0aefdf44583bf00c48c27c980b5aacc093a482",
   "note": "Each entry maps a numbered result of the paper (by its LaTeX label) to the Lean theorems that prove it. Modules are under ThetaTrial/Paper unless a full path is given. Lean eigenvalue indices start at 0: windowEigenvalue a n is lambda_(n+1)(a) in the paper.",
   "claims": [
     {

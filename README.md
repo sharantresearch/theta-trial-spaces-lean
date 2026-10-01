@@ -20,7 +20,8 @@ Both constructions rest on a truncation identity: if the Fourier transform of
 `F` is divisible by `Ξ`, then `F` cut off to `[-a, a]` and its exterior tail have
 the same Weil energy. None of the results assume the Riemann hypothesis.
 
-Every numbered result of the paper (Lemma 2.1 through Lemma 4.9) is proved here.
+Every lemma, proposition, theorem and corollary of the paper (Lemma 2.1
+through Lemma 4.9) is proved here, as are the eigenvalue bounds of Remark 3.7.
 [`verification/coverage.json`](verification/coverage.json) lists, for each
 result, the Lean theorems that prove it. The main ones are:
 
