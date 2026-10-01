@@ -1,0 +1,3 @@
+# Preserve the exact published source bytes on every platform.
+* -text
+*.pdf binary

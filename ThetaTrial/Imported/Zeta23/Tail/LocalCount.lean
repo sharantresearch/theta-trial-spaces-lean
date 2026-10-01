@@ -1,0 +1,41 @@
+/-
+Extracted from Zeta23/Tail.lean in anthropics/formal-math,
+tag v1.0, commit 3635e74826a4c1fcece7d1cd2b6fa75e43a00510.
+Copyright (c) 2026 Anthropic, PBC. All rights reserved.
+Released under Apache 2.0 license as described in the file ../LICENSE.
+SPDX-License-Identifier: Apache-2.0
+
+Local modification: retain the unchanged LocalCount.ofWindowCount theorem
+in a separate module with only its required imports, so the explicit formula
+does not import unrelated matrix-tail and counting-assembly results.
+-/
+import ThetaTrial.Imported.Zeta23.Defs
+import ThetaTrial.Imported.Zeta23.Tail.Count
+
+noncomputable section
+
+namespace Zeta23.Tail
+
+/-- From the two-sided local count on Z.N to the finite-sub-family form
+LocalCount, for all distinct zeros with their original multiplicities. -/
+theorem LocalCount.ofWindowCount (Z : ZeroConfig) {A₀ : ℝ} (hA₀ : 1 ≤ A₀)
+    (hloc : ∀ t : ℝ, (Z.N t (t + 1) : ℝ) ≤ A₀ * Real.log (|t| + 3)) :
+    LocalCount (fun ρ : Z.carrier => (ρ : ℂ).im) (fun ρ : Z.carrier => Z.mult ρ) A₀ where
+  one_le := hA₀
+  window t s hs := by
+    classical
+    refine le_trans ?_ (hloc t)
+    have hfin : (Z.window t (t + 1)).Finite := Z.finite_window t (t + 1)
+    unfold ZeroConfig.N
+    rw [finsum_mem_eq_finite_toFinset_sum _ hfin]
+    have hsub : s.map (Function.Embedding.subtype _) ⊆ hfin.toFinset := by
+      intro x hx
+      rw [Finset.mem_map] at hx
+      obtain ⟨ρ, hρ, rfl⟩ := hx
+      rw [Set.Finite.mem_toFinset]
+      exact ⟨ρ.2, hs ρ hρ⟩
+    have h := Finset.sum_le_sum_of_subset (f := Z.mult) hsub
+    rw [Finset.sum_map] at h
+    exact_mod_cast h
+
+end Zeta23.Tail

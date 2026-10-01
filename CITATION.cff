@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite the paper and the exact release or commit of this formalization."
+type: software
+title: "Lean formalization of 'Explicit theta trial spaces for the truncated Weil quadratic form'"
+authors:
+  - family-names: Thota
+    given-names: Sharan
+url: "https://github.com/sharantresearch/theta-trial-spaces-lean"
+repository-code: "https://github.com/sharantresearch/theta-trial-spaces-lean"
+abstract: "Lean 4 proofs of all numbered results of the paper, with pinned Lean and Mathlib versions and a table matching each result to its Lean theorem."
+keywords:
+  - Lean
+  - formalized mathematics
+  - Weil quadratic form
+  - theta functions
+  - spectral theory

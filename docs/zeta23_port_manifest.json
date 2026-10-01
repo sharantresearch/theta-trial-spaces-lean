@@ -1,0 +1,417 @@
+{
+  "upstream": "https://github.com/anthropics/formal-math",
+  "tag": "v1.0",
+  "commit": "3635e74826a4c1fcece7d1cd2b6fa75e43a00510",
+  "license": "Apache-2.0",
+  "upstream_toolchain": "leanprover/lean4:v4.33.0-rc2",
+  "upstream_mathlib": "51e6992efd06126df61a496bebf8f49482a4e129",
+  "target_toolchain": "leanprover/lean4:v4.33.0",
+  "target_mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "scope": "Only analytic dependencies used by the theta-trial-spaces paper.",
+  "files": [
+    {
+      "original_path": "Zeta23/Analytic/RectangleLogDeriv.lean",
+      "original_sha256": "4c891cc4ff18febabd1dcfd3990b41fed065286a0b7755e9708bf57eae177842",
+      "ported_path": "ThetaTrial/Imported/Zeta23/Analytic/RectangleLogDeriv.lean",
+      "ported_sha256": "8510b422abaeeaaeb5d47cdffe4cc0548b823d1db0f161897fbdea46b8b15c3d"
+    },
+    {
+      "original_path": "Zeta23/Analytic/Stirling.lean",
+      "original_sha256": "7d5ea6ed59ae94b0cad535e57d0b8e812ee14e3687740b807bbf6cf6e488602c",
+      "ported_path": "ThetaTrial/Imported/Zeta23/Analytic/Stirling.lean",
+      "ported_sha256": "a75f1900819363c803feb7a27d21c5f2781368a1f8fd4d346d9c3895e9c2ab40"
+    },
+    {
+      "original_path": "Zeta23/Defs.lean",
+      "original_sha256": "20f154ca6f9827d277b2c0cca999720c67cdc279d672fec220a073c46a848bfb",
+      "ported_path": "ThetaTrial/Imported/Zeta23/Defs.lean",
+      "ported_sha256": "538179fd60caa39e6df97a650daeb16babf4a51bc9725aaa7de349aeb059d0c4"
+    },
+    {
+      "original_path": "Zeta23/Defs/Counting.lean",
+      "original_sha256": "a244e8a4a8b6acf3ab0ab97407f6efe84edf16702570a43f38cb8cf760a28c07",
+      "ported_path": "ThetaTrial/Imported/Zeta23/Defs/Counting.lean",
+      "ported_sha256": "1e0cf869e2fa1555b021166f3fb96a9de33399414b99a48373ed92def4bade5f"
+    },
+    {
+      "original_path": "Zeta23/ExplicitFormula.lean",
+      "original_sha256": "dbb69f60c19266a4026c027bc230e64b56e86f93e2c91c25f1f3920e9de110b3",
+      "ported_path": "ThetaTrial/Imported/Zeta23/ExplicitFormula.lean",
+      "ported_sha256": "91702ca0e4a56a1270c67e3e7bb98c9e140666fe75f7cb22cf47160ba47cd579"
+    },
+    {
+      "original_path": "Zeta23/ExplicitFormula/Bridge.lean",
+      "original_sha256": "d091079a643a7022930acc691e64e27f343329e80c901f906a8d54a0726340b7",
+      "ported_path": "ThetaTrial/Imported/Zeta23/ExplicitFormula/Bridge.lean",
+      "ported_sha256": "0565645efdd170a11b5f970a1803d762605a9287855317a4a58f72eee81244ed"
+    },
+    {
+      "original_path": "Zeta23/FromPNTPlus/Auxiliary.lean",
+      "original_sha256": "b704aa26515bbc2b73fe5ce1acd47e9382424fd26d96205b7e5bf89df67f5877",
+      "ported_path": "ThetaTrial/Imported/Zeta23/FromPNTPlus/Auxiliary.lean",
+      "ported_sha256": "6a70d5872d3c6c12c2607842e95ba6ccdf5e211ab4474a806e117098fcf90f0d"
+    },
+    {
+      "original_path": "Zeta23/FromPNTPlus/EulerMaclaurin.lean",
+      "original_sha256": "a95df73b7073be81915ed23319d61fdf4bdcdda7a3ea162e97776f2c17859d9a",
+      "ported_path": "ThetaTrial/Imported/Zeta23/FromPNTPlus/EulerMaclaurin.lean",
+      "ported_sha256": "83a22c20fa4f7c9f62dd38ce58c2cf6cb64ff63bcd95aabefef83d9df8444c4e"
+    },
+    {
+      "original_path": "Zeta23/FromPNTPlus/Fourier.lean",
+      "original_sha256": "7ce76c01f3ba5da00c206d92c07b584b799ba643f84ff0bba42473e8668bf0cf",
+      "ported_path": "ThetaTrial/Imported/Zeta23/FromPNTPlus/Fourier.lean",
+      "ported_sha256": "d4632f6f8379ab774c6ff6bf92657fb9aa3f6ec6ea5790799be4f73ce6051043"
+    },
+    {
+      "original_path": "Zeta23/FromPNTPlus/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+      "original_sha256": "7b3f91e1d92b332b94620e9e45b6be5819e8a851fb9a781d5d02f9fcb30bc58b",
+      "ported_path": "ThetaTrial/Imported/Zeta23/FromPNTPlus/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+      "ported_sha256": "8bc126b660d6a461ca9aec67f85f22e51722c266028c1480323e5e4f7e1fd1d2"
+    },
+    {
+      "original_path": "Zeta23/FromPNTPlus/Rectangle.lean",
+      "original_sha256": "06fd05bda5b55a5e533e4e08b265ccbbe43c3552a19757a1876d5012ef47c54a",
+      "ported_path": "ThetaTrial/Imported/Zeta23/FromPNTPlus/Rectangle.lean",
+      "ported_sha256": "2095b768eace407e70e1175a8edf0160db39399849b1194457268193a6aff950"
+    },
+    {
+      "original_path": "Zeta23/FromPNTPlus/ResidueCalcOnRectangles.lean",
+      "original_sha256": "f49e3828b97b6b94d4e48724c94068e3254cb4125d40c0b5a68f7f9c54331376",
+      "ported_path": "ThetaTrial/Imported/Zeta23/FromPNTPlus/ResidueCalcOnRectangles.lean",
+      "ported_sha256": "88cb9d0ba5f40ca80b41be9715538ebc013030a60a1e59168a81d029142eaf96"
+    },
+    {
+      "original_path": "Zeta23/FromPNTPlus/Sobolev.lean",
+      "original_sha256": "82c57584a5b7c86ccaa0c61d39a448cb9fbb79e33308a587aab84510cca6c91e",
+      "ported_path": "ThetaTrial/Imported/Zeta23/FromPNTPlus/Sobolev.lean",
+      "ported_sha256": "d8a62e830c646d78ff94b55de4e567f0ed2dc09d62f9a5f38a9fa90157c4db3d"
+    },
+    {
+      "original_path": "Zeta23/FromPNTPlus/StrongPNTPrefix.lean",
+      "original_sha256": "de37df66554398ac248457e29798b35cb8a02bf83208c04ba577a426bfb51310",
+      "ported_path": "ThetaTrial/Imported/Zeta23/FromPNTPlus/StrongPNTPrefix.lean",
+      "ported_sha256": "e9f667891781135882c8c89b046199467365f082c61e4f8ba644382b1e43f59e"
+    },
+    {
+      "original_path": "Zeta23/FromPNTPlus/Tactic/AdditiveCombination.lean",
+      "original_sha256": "54a19becf4538985147eb028a4d83dee357e6cb8763c39460df7bfbed3c04593",
+      "ported_path": "ThetaTrial/Imported/Zeta23/FromPNTPlus/Tactic/AdditiveCombination.lean",
+      "ported_sha256": "0450cac2115d7718ed0f433e695c203cd153d8add5923f854e8c25614c0dcb61"
+    },
+    {
+      "original_path": "Zeta23/FromPNTPlus/ZetaBounds.lean",
+      "original_sha256": "8fbc056af9e3d444149a6dbea2dc84026ac67769c311e603d94abfbf910e4518",
+      "ported_path": "ThetaTrial/Imported/Zeta23/FromPNTPlus/ZetaBounds.lean",
+      "ported_sha256": "d781f3c756f299aef9e70378f07c5c20a2b34899d2d400293ef55a22ea21b912"
+    },
+    {
+      "original_path": "Zeta23/GammaFacts.lean",
+      "original_sha256": "ff171ae816b3c88ebe02e508a41952587f6ade51880e6ab159479a2eb9245fc3",
+      "ported_path": "ThetaTrial/Imported/Zeta23/GammaFacts.lean",
+      "ported_sha256": "4f38b78148363dbbc5ceaf2bb44b7d105ce4387c1db86d269e22b244d81c5fe2"
+    },
+    {
+      "original_path": "Zeta23/GammaFacts/Complete.lean",
+      "original_sha256": "80abcfeb7677d93ff9b69215f3d1a41ed4265945a5539adf212cbfd2b31215c5",
+      "ported_path": "ThetaTrial/Imported/Zeta23/GammaFacts/Complete.lean",
+      "ported_sha256": "c2e2873b4340a4e8ef62586eb6186209d62367b987a5d54c7c2c0bf28f1a9003"
+    },
+    {
+      "original_path": "Zeta23/GammaFacts/IntMu.lean",
+      "original_sha256": "c5330208b1d62fca3c33f0861141155bb06ac1815cb2fbd267bcdb1b569d8ab6",
+      "ported_path": "ThetaTrial/Imported/Zeta23/GammaFacts/IntMu.lean",
+      "ported_sha256": "986e229540ac0e2c41f4006a818e578a367ac386d407f5d325d65a0c5da84a91"
+    },
+    {
+      "original_path": "Zeta23/GammaFacts/Mu.lean",
+      "original_sha256": "1afe79512cb9388e02d05a8ccc7f290cb86287e7ea60299666699993fa08f9f6",
+      "ported_path": "ThetaTrial/Imported/Zeta23/GammaFacts/Mu.lean",
+      "ported_sha256": "c4e525494861971bd5ecc30a2f5bd1a5ba299d6fb30b7804727a5d1a04a3ded4"
+    },
+    {
+      "original_path": "Zeta23/GammaFacts/Series.lean",
+      "original_sha256": "d97c60fc2f2484c9216b404417d052f243435d7f39fdab89b40033b7f0e1aa36",
+      "ported_path": "ThetaTrial/Imported/Zeta23/GammaFacts/Series.lean",
+      "ported_sha256": "4e8f953538cd355fcdbfd29b836997942a58e3ab3d621c99674cc38f7ba58456"
+    },
+    {
+      "original_path": "Zeta23/GammaFacts/StirlingVert.lean",
+      "original_sha256": "71a8e916f9af21226cd12f8bf23a6d2adb17f10aa650e65960d7a32810fb9c19",
+      "ported_path": "ThetaTrial/Imported/Zeta23/GammaFacts/StirlingVert.lean",
+      "ported_sha256": "5261f15d56cbb99a580663752510a0c4c13544cdf332a06ce351a4ee83064c3f"
+    },
+    {
+      "original_path": "Zeta23/Hypotheses.lean",
+      "original_sha256": "a5de3f0ee6bca871c1c7dd407d97b24c01ed1eb9a5c02d1c10bdd9ea72237cc9",
+      "ported_path": "ThetaTrial/Imported/Zeta23/Hypotheses.lean",
+      "ported_sha256": "0eb9865aabc81b12b2fe266669ea9d583996f77ff8a074851f1005ccd4eafae7"
+    },
+    {
+      "original_path": "Zeta23/Poisson/PaperFT.lean",
+      "original_sha256": "7b04b3345688e5766350b9109549bd5db251fbba62b60bbb57c56cd02fa27565",
+      "ported_path": "ThetaTrial/Imported/Zeta23/Poisson/PaperFT.lean",
+      "ported_sha256": "6dcdf3631635b473b3c11e177f4193454e4f81443b7acadea0a0d88f51a0b53d"
+    },
+    {
+      "original_path": "Zeta23/Prelude/InstancePriorities.lean",
+      "original_sha256": "39a9f2959f359815734e61d3ace3cb0eeb542e46ce97563241b7c5d1737d8f28",
+      "ported_path": "ThetaTrial/Imported/Zeta23/Prelude/InstancePriorities.lean",
+      "ported_sha256": "de5603f65410e1727e41dc0955b5004a898b04093ba0d5bce46562f82e5144fd"
+    },
+    {
+      "original_path": "Zeta23/RvM/CountByIntegral.lean",
+      "original_sha256": "e39f74fe9d087557ddcbb380c71cd5bf903f4ea94a232a75133ff431361c2cea",
+      "ported_path": "ThetaTrial/Imported/Zeta23/RvM/CountByIntegral.lean",
+      "ported_sha256": "4014386f942022c6a60a58fdccd01df68a35d1bcbd5077c9371e51bea7c8908f"
+    },
+    {
+      "original_path": "Zeta23/RvM/Halving.lean",
+      "original_sha256": "2122fa565f6c0a97e413b97d7dcf3e8a976a917d6ac4ca11e0d03d3138dc8fb9",
+      "ported_path": "ThetaTrial/Imported/Zeta23/RvM/Halving.lean",
+      "ported_sha256": "676bec7654e41008c1faad77086175360e86743d4a3c2391249beccc9d5e535c"
+    },
+    {
+      "original_path": "Zeta23/RvM/LocalCount.lean",
+      "original_sha256": "3887d1e58faf623ba8e1b06e31adb74fb777ac87f0706e31a0d58a9a29bdceac",
+      "ported_path": "ThetaTrial/Imported/Zeta23/RvM/LocalCount.lean",
+      "ported_sha256": "08b9d2306d037a6d2954b313a9334cb270c4b02ff3733c014e92418071ca6e9c"
+    },
+    {
+      "original_path": "Zeta23/RvM/ZetaGrowth.lean",
+      "original_sha256": "1c6312b3d61b6f11afe433735e34d7fd11fe9363fbf4e13ac252d88845733eac",
+      "ported_path": "ThetaTrial/Imported/Zeta23/RvM/ZetaGrowth.lean",
+      "ported_sha256": "0b336a2cd5db6d7a0ec84f841b113c777df7e17413983ea42e314630ba2bde31"
+    },
+    {
+      "original_path": "Zeta23/Statement.lean",
+      "original_sha256": "c9fc4b6ff37bce9e93c33f2f3ae53b45bea47fb89818a57a4db522bf340d6679",
+      "ported_path": "ThetaTrial/Imported/Zeta23/Statement.lean",
+      "ported_sha256": "3cb0b516c40639487d7c2dee47c66510561790fcacc16a756e02a92a6085114d"
+    },
+    {
+      "original_path": "Zeta23/Statement/Seam.lean",
+      "original_sha256": "ef8f7489564c7aacdf9e8ad586beedcb1357a2f92514f0c880b349c62e7440ac",
+      "ported_path": "ThetaTrial/Imported/Zeta23/Statement/Seam.lean",
+      "ported_sha256": "dea4610e5a323fb7a664e15ec6587f97b73af7b287341f6588ecfcc11806578e"
+    },
+    {
+      "original_path": "Zeta23/Statement/SeamClosed.lean",
+      "original_sha256": "3b379ec90826d6a11aec93526aaa6a8ab28f154dd52d62cbc20c1186fa872a4d",
+      "ported_path": "ThetaTrial/Imported/Zeta23/Statement/SeamClosed.lean",
+      "ported_sha256": "0e118aea5bcd151e315ff46112bf7f7f8b5b13fffcdb6fcc1697b87d17a4bf63"
+    },
+    {
+      "original_path": "Zeta23/Tail/Basic.lean",
+      "original_sha256": "8cb518c5600d04ef394c775f538c6e8a155db03536a2d35e92f3ef04c7cf8b4c",
+      "ported_path": "ThetaTrial/Imported/Zeta23/Tail/Basic.lean",
+      "ported_sha256": "87f3143cec846459bb110923dc89e9b7c71a209de445fa08786dd1f0f5b9fbda"
+    },
+    {
+      "original_path": "Zeta23/Tail/Count.lean",
+      "original_sha256": "53a9b54fd4ecc2121dc4d92dcf4ebef3ba1163ed4e0b7dcd3e13b09cdd51d6ec",
+      "ported_path": "ThetaTrial/Imported/Zeta23/Tail/Count.lean",
+      "ported_sha256": "33b277a39748c1009eff1742a14599d69b8cd027b2297e5979a6fe744398e6b9"
+    },
+    {
+      "original_path": "Zeta23/Tail.lean",
+      "original_sha256": "3cbbc6a607522fe5b4842010f1184695eed9c71d01fb09125d9a8b09de0c8939",
+      "ported_path": "ThetaTrial/Imported/Zeta23/Tail/LocalCount.lean",
+      "ported_sha256": "0b304e9e71bdc47d8ffc3513ef62997ffc65cea0d8e541619cf0e2b202457d94",
+      "publication_change": "Extract only LocalCount.ofWindowCount with its proof unchanged, retaining attribution and minimal imports."
+    },
+    {
+      "original_path": "Zeta23/WeilEF/Contour.lean",
+      "original_sha256": "f1aea98e92a39b8bc6be620c568e53ad4a593662acd03d5b0fec1852dac2aaa0",
+      "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/Contour.lean",
+      "ported_sha256": "0967519a904394c7f192e6dc77626f457d9f2e818033949ef15479478356ff0c"
+    },
+    {
+      "original_path": "Zeta23/WeilEF/FullLine.lean",
+      "original_sha256": "078d64cfb98b301f797fe9013ba50fa84499356e7e001725daa2bed1b56a3fe9",
+      "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/FullLine.lean",
+      "ported_sha256": "caf8457f135efbbd78d0d0f56d87b57803b653e801d64ed9098be0eb62cbfab9"
+    },
+    {
+      "original_path": "Zeta23/WeilEF/FullLineAssembly.lean",
+      "original_sha256": "84c9e56ab59065aad9bdb03a73a0de0e51a7c4e9ada48ca32019d215c91315ae",
+      "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/FullLineAssembly.lean",
+      "ported_sha256": "0097ff5b71c914dff56d71ff9beaae572176a61e55e7f6c2d7604f3c4b43499a"
+    },
+    {
+      "original_path": "Zeta23/WeilEF/GammaRBracket.lean",
+      "original_sha256": "dedba756561cd5cc4ffc7e14ea2f0066e99bf822610ee818cb1e242a7edba3b6",
+      "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/GammaRBracket.lean",
+      "ported_sha256": "936184d6457ab74c1ef262c0d053ef479507abcb30d340c419557fbff67f8f87"
+    },
+    {
+      "original_path": "Zeta23/WeilEF/GoodHeights.lean",
+      "original_sha256": "cef0111096edf165e10ec89d08c09fb8eb40b0701f0ee8fbec5f4dc172978ff1",
+      "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/GoodHeights.lean",
+      "ported_sha256": "89b34cefee9297fa3a668b8aee5fb6db763955d867a6109b763fee1d9f5d93bf",
+      "previous_ported_sha256": "87bf1dd4a055923b886f0cb4394f369e8c1d7bf5749ea9fb87a870061376915b",
+      "publication_change": "Replace broad Tail import with the extracted Tail.LocalCount module; theorem statements and proof bodies unchanged."
+    },
+    {
+      "original_path": "Zeta23/WeilEF/Horizontal.lean",
+      "original_sha256": "e11f49e1a6992f8ecd77fa14273c974e33282c3758564ba31b251263154f849a",
+      "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/Horizontal.lean",
+      "ported_sha256": "eb4ae16284cd8a936a14bcdbbb1bffbaba2ac10be38247dbb35dde038ee779da"
+    },
+    {
+      "original_path": "Zeta23/WeilEF/Landau.lean",
+      "original_sha256": "0ad2bf1b51eaccd2437e9f48216b0ae4365dab4ae529bb7fea887072e5c802f2",
+      "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/Landau.lean",
+      "ported_sha256": "79c788a507ee14b3377bb898eeb03387c604868e35e77b6122789e4a888c557f"
+    },
+    {
+      "original_path": "Zeta23/WeilEF/Main.lean",
+      "original_sha256": "d9fc70dcdce51aadd7e08f6d9b3ddb80efa3077e0b01377801af598a809fb526",
+      "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/Main.lean",
+      "ported_sha256": "c5a9679da662f6f3bf09e37f09f085be1c3e841155d41fcfa3549d7edb000fdb"
+    },
+    {
+      "original_path": "Zeta23/WeilEF/VerticalLine.lean",
+      "original_sha256": "c4771eebc7edf75bb35fdc6a6589b5943ebef39cf3656857034e8f87a7973202",
+      "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/VerticalLine.lean",
+      "ported_sha256": "a331b0412e40c3c8d0216bef8b56284bee1294180cecac4844a0a638db747f51"
+    },
+    {
+      "original_path": "Zeta23/WeilEF/XiLogDeriv.lean",
+      "original_sha256": "faf7ed05d3d7c89d193ff1f93cdaf1bb420ecf4626cdb6d2003059f32baebd9e",
+      "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/XiLogDeriv.lean",
+      "ported_sha256": "f7f7a730796f2b3ee30984c182116dca220b5ad36f769be1be3c4bff20d5d92c"
+    },
+    {
+      "original_path": "Zeta23/WeilEF/ZeroSumLimit.lean",
+      "original_sha256": "a6df51e85ef02b59fc347a79300c1bf4a5ddbf8e6ecd879afde0d505b92d279f",
+      "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/ZeroSumLimit.lean",
+      "ported_sha256": "a74bdea61b1461d65d4875652e5b24a5e8bf3fdc318e1a43a71409bb8e522726"
+    },
+    {
+      "original_path": "Zeta23/WeilEF/ZeroSummability.lean",
+      "original_sha256": "ad1bc8a5bddd66dea5860c77fb8eef44e285158175aa7a05045a4228940f7f21",
+      "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/ZeroSummability.lean",
+      "ported_sha256": "885628d96150241550aef856e883f2c9c12410e891a837080dd609c075b14fad",
+      "previous_ported_sha256": "1d3bcee7763abee803d69ef299f703c6062a5dfea974383d90ce76f56f78d2e4",
+      "publication_change": "Replace broad Tail import with the extracted Tail.LocalCount module; theorem statements and proof bodies unchanged."
+    },
+    {
+      "original_path": "Zeta23/ZetaReflect.lean",
+      "original_sha256": "51039bef9725873cb69e7d955620ba6ba5293fb0533e20e4d8214b7326179c15",
+      "ported_path": "ThetaTrial/Imported/Zeta23/ZetaReflect.lean",
+      "ported_sha256": "76a7149cbd1fb607c5d048aa1082f2901cf9c9c6a8e97df73c2e6adb93d25d92"
+    }
+  ],
+  "compatibility_edits": {
+    "description": "Import-path relocation, attribution headers, and exact deprecated-alias replacements in the included subset.",
+    "aliases": {
+      "mem_setOf_eq": "mem_ofPred_eq",
+      "setOf_subset_setOf": "ofPred_subset_ofPred",
+      "notMem_setOf_iff": "notMem_ofPred_iff",
+      "preimage_setOf_eq": "preimage_ofPred_eq"
+    },
+    "files": [
+      {
+        "original_path": "Zeta23/FromPNTPlus/StrongPNTPrefix.lean",
+        "ported_path": "ThetaTrial/Imported/Zeta23/FromPNTPlus/StrongPNTPrefix.lean",
+        "previous_ported_sha256": "7bb666359c16e7b4d583959964ce65b6e36c848fc3bc08ded5fd5f8500151286",
+        "ported_sha256": "6667979992d02f308bd65d00b36bf201d80e011252a04bc12ec68b51bde695eb",
+        "replacements": {
+          "mem_setOf_eq": 3,
+          "setOf_subset_setOf": 1,
+          "notMem_setOf_iff": 2
+        }
+      },
+      {
+        "original_path": "Zeta23/FromPNTPlus/ZetaBounds.lean",
+        "ported_path": "ThetaTrial/Imported/Zeta23/FromPNTPlus/ZetaBounds.lean",
+        "previous_ported_sha256": "684ac6cf045f42d5f26ea4461f928881c05816e54e24459d21f831896bc1d8b8",
+        "ported_sha256": "9823c351340c2bf12354943ab3bee1886cb43aa21e50301dfebd493eff768150",
+        "replacements": {
+          "mem_setOf_eq": 15,
+          "preimage_setOf_eq": 3,
+          "setOf_subset_setOf": 3
+        }
+      },
+      {
+        "original_path": "Zeta23/RvM/Halving.lean",
+        "ported_path": "ThetaTrial/Imported/Zeta23/RvM/Halving.lean",
+        "previous_ported_sha256": "9e4ceaeb3bf82495ca9a157616fbb73083236d4ef353830a6bffea9ae95c5622",
+        "ported_sha256": "758cfd47da70fd26d352c7891144567cf76f445033728d0a492bc7508a2a7713",
+        "replacements": {
+          "mem_setOf_eq": 3
+        }
+      },
+      {
+        "original_path": "Zeta23/Statement.lean",
+        "ported_path": "ThetaTrial/Imported/Zeta23/Statement.lean",
+        "previous_ported_sha256": "177666921770d729533c321146a84a944d743a59db444dc7415a417a943a6951",
+        "ported_sha256": "d8eaf307b52c99aa6ef63a49e0c0c37a290e6009a1637428b3ce1bc052e52911",
+        "replacements": {
+          "mem_setOf_eq": 1
+        }
+      },
+      {
+        "original_path": "Zeta23/WeilEF/Contour.lean",
+        "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/Contour.lean",
+        "previous_ported_sha256": "8b6f4714c281df1b37feeecdf599141b1d3f411d2c3b3813a75c20fd3aa7853c",
+        "ported_sha256": "57b6127e570ccaabbf8628c8dff5470a39b7b461ebd9d9c1d3f264bad942a9ee",
+        "replacements": {
+          "mem_setOf_eq": 1
+        }
+      },
+      {
+        "original_path": "Zeta23/WeilEF/Landau.lean",
+        "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/Landau.lean",
+        "previous_ported_sha256": "14c00f23d3ac0b3ca63857d84b50d96660aa10d031f54c8b34a7785b6af2fe04",
+        "ported_sha256": "91c29e4ced90d150b5431cc3511ac3c01a2ae4f50efb867d4ebbc454324f99e9",
+        "replacements": {
+          "mem_setOf_eq": 2
+        }
+      },
+      {
+        "original_path": "Zeta23/WeilEF/ZeroSummability.lean",
+        "ported_path": "ThetaTrial/Imported/Zeta23/WeilEF/ZeroSummability.lean",
+        "previous_ported_sha256": "c0b9d6a713b556eab02ceca34699f08df4c491149ef186099450634f88990050",
+        "ported_sha256": "1d3bcee7763abee803d69ef299f703c6062a5dfea974383d90ce76f56f78d2e4",
+        "replacements": {
+          "mem_setOf_eq": 1
+        }
+      },
+      {
+        "original_path": "Zeta23/ZetaReflect.lean",
+        "ported_path": "ThetaTrial/Imported/Zeta23/ZetaReflect.lean",
+        "previous_ported_sha256": "1da6d31786cc1462bb26abcdbf7ebdb4d3b0c3afa85a9d4a54c25ae2b01c493c",
+        "ported_sha256": "bf2c02a99b997e3e450b2b6a1857c9973dc57d17b54a842bdeef07cf2e8e7059",
+        "replacements": {
+          "mem_setOf_eq": 1
+        }
+      }
+    ]
+  },
+  "additional_alias_edits": [
+    {
+      "original_path": "Zeta23/Statement/Seam.lean",
+      "ported_path": "ThetaTrial/Imported/Zeta23/Statement/Seam.lean",
+      "previous_ported_sha256": "0e157cac7f834998b979d5d30d9379ff2e7adb4ca044556c7f9187bd06514432",
+      "ported_sha256": "4bbe130196d6a6dd3f32627ea9741a8734d1d722f53123f85b2e7b9f015c9692",
+      "changes": [
+        {
+          "old_expression": "ENat.toNat_coe",
+          "new_expression": "ENat.toNat_natCast",
+          "occurrences": 1,
+          "reason": "deprecated exact alias"
+        }
+      ]
+    }
+  ],
+  "local_adaptations": [
+    {
+      "path": "ThetaTrial/XiZeros.lean",
+      "source": "Zeta23/XiPrime/ExplicitFormula/ZeroFree.lean: analyticOrderNatAt_xi",
+      "change": "Direct nonvanishing-factor multiplicity proof using ThetaTrial.xi_eq_completed; unchanged public theorem statement; upstream attribution retained in file."
+    }
+  ],
+  "module_namespace": "ThetaTrial; upstream declaration namespaces and licenses are unchanged."
+}

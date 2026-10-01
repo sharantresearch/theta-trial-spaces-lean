@@ -1,0 +1,363 @@
+{
+  "paper_title": "Explicit theta trial spaces for the truncated Weil quadratic form",
+  "paper_sha256": "fa4beb3a31b7e95b0a26520eaa44799777f94d36c85aba6271c19ec2fc94b556",
+  "note": "Each entry maps a numbered result of the paper (by its LaTeX label) to the Lean theorems that prove it. Modules are under ThetaTrial/Paper unless a full path is given. Lean eigenvalue indices start at 0: windowEigenvalue a n is lambda_(n+1)(a) in the paper.",
+  "claims": [
+    {
+      "label": "pre:theta",
+      "result": "Lemma 2.1",
+      "statement": "The theta density: positivity, evenness, holomorphy in the strip, Fourier transform equal to Xi, decay of all derivatives, and an interval around 0 on which Xi does not vanish.",
+      "modules": [
+        "ThetaNormalization",
+        "ThetaFourier",
+        "ThetaStrip",
+        "ThetaStripDecay",
+        "ThetaKernel",
+        "Definitions"
+      ],
+      "theorems": [
+        "complexThetaDensity_ofReal",
+        "paperFourier_theta",
+        "complexThetaDensity_iteratedDeriv_closed_strip_decay",
+        "thetaDensity_pos",
+        "theta_kernel"
+      ]
+    },
+    {
+      "label": "pre:form",
+      "result": "Proposition 2.2",
+      "statement": "The Weil form on the window is closed, semibounded and has compact resolvent; smooth functions form a core; the same holds on even and odd functions; compactly supported BV functions lie in the form domain. Includes the min-max principle used for the eigenvalue bounds.",
+      "modules": [
+        "FormDomain",
+        "FormCore",
+        "WindowFormBounds",
+        "WindowFormAssembly",
+        "WindowFormCore",
+        "WindowOperator",
+        "CompactFormSpectrum",
+        "FormMinMax",
+        "Reflection",
+        "ReflectionPairing",
+        "L2Reflection",
+        "WindowInfiniteDimension",
+        "WindowSpectrum",
+        "WindowTrialSpectrum",
+        "ParityFormEmbedding",
+        "InvariantFormReflection",
+        "WindowParity",
+        "WindowOperatorParity",
+        "WindowParityCore",
+        "WindowParitySpectrum",
+        "BVWindowDomain",
+        "WindowOperatorParityRestriction"
+      ],
+      "theorems": [
+        "FormDomain.windowInclusion_isCompactOperator",
+        "FormDomain.smoothCoreVectors_dense",
+        "WindowFormAssembly.exists_form_representation",
+        "windowWeilOperator_weak",
+        "windowWeilOperator_selfAdjoint",
+        "windowResolvent_compact",
+        "windowEigenvalue_minmax",
+        "windowEigenbasis_operator",
+        "windowEigenvalue_tendsto",
+        "WindowParity.exists_smooth_parity_full_form_core_sequence",
+        "windowWeilOperator_reflection",
+        "parityEigenvalue_minmax",
+        "parityEigenvalue_operator",
+        "parityWeilOperator_selfAdjoint",
+        "supportedBV_inDomain",
+        "parityWeilOperator_graph_iff",
+        "parityWeilOperator_domain_iff",
+        "parityResolvent_compact",
+        "parityWeilOperator_closed",
+        "parityWeilOperator_semibounded"
+      ]
+    },
+    {
+      "label": "pre:bv",
+      "result": "Lemma 2.3",
+      "statement": "The weighted BV bound |Q(t)| <= C M(t)^2, together with the L2 and Fourier bounds, and the formula for M(t) of a hard tail.",
+      "modules": [
+        "BV",
+        "WeightedBVMeasure",
+        "TailDerivativeMeasure",
+        "TailFormBound",
+        "RadicalBV",
+        "PhysicalWeilIdentity",
+        "ComplexPrimeSeries"
+      ],
+      "theorems": [
+        "weightedBVMeasure_fullWeilForm_abs_le",
+        "weightedBVMeasure_fullForm_converges",
+        "weightedBVMeasure_l2_bound",
+        "weightedBVMeasure_fourier_square_bound",
+        "weightedBV_physicalWeil_identity",
+        "weightedBV_physical_terms_converge",
+        "weightedBVMeasure_complexPrime",
+        "fullWeilForm_eq_complexPrime"
+      ]
+    },
+    {
+      "label": "pre:radical",
+      "result": "Proposition 2.4",
+      "statement": "Truncation identity: for imaginary-shift averages of the theta density (arbitrary finite complex measure) and their polynomial derivatives, Q(F 1_[-a,a]) = Q(F 1_{|u|>a}). Does not assume the Riemann hypothesis.",
+      "modules": [
+        "Radical",
+        "RadicalApproximation",
+        "RadicalCorrelation",
+        "RadicalCutoff",
+        "RadicalSource",
+        "ComplexShiftMeasure",
+        "ComplexShiftPolynomial",
+        "ComplexShiftDecay",
+        "ThetaPolynomialRadical",
+        "ThetaPolynomialDecay",
+        "EvenShiftWeights",
+        "ShiftDensity",
+        "MeasureRadicalBound"
+      ],
+      "theorems": [
+        "ComplexShiftMeasure.polynomial_hardCutoff",
+        "ComplexShiftMeasure.polynomial_window_abs_bound",
+        "ComplexShiftMeasure.polynomial_all_derivatives_doubleExp_decay",
+        "polynomialDerivative_theta_hardCutoff",
+        "weightedShiftMultiplier_real_ge_zero_value",
+        "ShiftDensity.source_density_real",
+        "ShiftDensity.multiplier_density",
+        "ComplexShiftMeasure.polynomial_window_abs_measure_bound",
+        "polynomialDerivative_theta_window_abs_measure_bound"
+      ]
+    },
+    {
+      "label": "avg:main",
+      "result": "Theorem 3.1",
+      "statement": "The normalized theta-average trial function is real, even, of unit norm, in the form domain, and has |Q| <= C exp(-2T_a + 34a).",
+      "modules": [
+        "ThetaAvgMain",
+        "ThetaAvgNormalization",
+        "ThetaAvgEnergy",
+        "WindowParitySpectrum"
+      ],
+      "theorems": [
+        "thetaAvg_main",
+        "thetaAvg_main_unitLp",
+        "thetaAvg_even_first_eigenvalue",
+        "thetaAvg_first_eigenvalue"
+      ]
+    },
+    {
+      "label": "avg:factorization",
+      "result": "Lemma 3.2",
+      "statement": "Fourier factorization of the theta average and properties of the von Mises multiplier.",
+      "modules": [
+        "Multiplier",
+        "ShiftedAverageAnalytic",
+        "ShiftedAverageFourier"
+      ],
+      "theorems": [
+        "paperFourier_shiftedAverage",
+        "shiftMultiplier_entire",
+        "shiftMultiplier_neg",
+        "shiftMultiplier_norm_le",
+        "shiftMultiplier_eq_cosh",
+        "shiftMultiplier_real_ge_zero_value",
+        "shiftMultiplier_zero_lower_sqrt",
+        "shiftedAverage_analyticOnNhd",
+        "shiftedAverage_real",
+        "shiftedAverage_neg"
+      ]
+    },
+    {
+      "label": "avg:contour",
+      "result": "Lemma 3.3",
+      "statement": "Contour bound for the theta average on a complex disc, and the resulting bounds for all derivatives on both tails.",
+      "modules": [
+        "ContourArcIdentity",
+        "ContourDeformation",
+        "ContourModeEstimate",
+        "ShiftedAverageBound",
+        "ThetaAvgContour"
+      ],
+      "theorems": [
+        "thetaAvg_contour_derivative_bound",
+        "thetaAvg_real_derivative_bound"
+      ]
+    },
+    {
+      "label": "avg:interior",
+      "result": "Lemma 3.4",
+      "statement": "Mass of the von Mises weight, interior approximation of the average, and the lower bound c/Z for the norm of the truncation.",
+      "modules": [
+        "ShiftMassAsymptotic",
+        "ShiftedAverageInterior"
+      ],
+      "theorems": [
+        "shiftMass_sharp_relative_error",
+        "shiftedAverage_interior_approximation",
+        "shiftedAverage_window_squaredNorm_lower"
+      ]
+    },
+    {
+      "label": "avg:spaces",
+      "result": "Theorem 3.5",
+      "statement": "Growing-dimensional trial spaces: dimension k+1 and the bound on |Q(f)|/||f||^2 for every vector, for complex coefficients.",
+      "modules": [
+        "PolynomialCoefficientBounds",
+        "ThetaAvgPolynomialTail",
+        "ThetaAvgPolynomialNorm",
+        "ThetaAvgPolynomialTheorem",
+        "ThetaAvgTrialDimension",
+        "ThetaAvgSpaces",
+        "ThetaAvgSpaceVectors",
+        "WindowTrialSpectrum"
+      ],
+      "theorems": [
+        "thetaAvg_polynomial_window_estimates",
+        "thetaAvg_spaces",
+        "thetaAvg_spaces_L2",
+        "thetaAvg_eigenvalue_spaces"
+      ]
+    },
+    {
+      "label": "avg:large-space",
+      "result": "Corollary 3.6",
+      "statement": "A space of dimension floor(T_a/(32a)) + 1 on which |Q(f)| <= exp(-T_a) ||f||^2.",
+      "modules": [
+        "TrialBounds",
+        "ThetaAvgSpaces",
+        "ThetaAvgSpaceVectors",
+        "WindowTrialSpectrum"
+      ],
+      "theorems": [
+        "thetaAvg_large_space",
+        "thetaAvg_large_space_L2",
+        "thetaAvg_large_eigenvalue_space"
+      ]
+    },
+    {
+      "label": "deriv:main",
+      "result": "Theorem 4.1",
+      "statement": "Positivity on truncated theta derivatives: Q(f) = Q(t) >= (a/4) ||t||^2 > 0 for every nonzero complex polynomial of degree d <= c e^a; the space has dimension d+1.",
+      "modules": [
+        "ThetaDerivPolynomialRegularity",
+        "ThetaDerivSourceLocalization",
+        "ThetaDerivScalarAbsorption",
+        "ThetaDerivSector",
+        "ThetaDerivTrialSpace"
+      ],
+      "theorems": [
+        "thetaDeriv_main_sqrtT",
+        "thetaDeriv_trialSpace_main_sqrtT",
+        "thetaDerivWindow_inDomain"
+      ]
+    },
+    {
+      "label": "deriv:exact-modes",
+      "result": "Lemma 4.2",
+      "statement": "Translation identity for the theta modes and the polynomial form of P(D) applied to the first mode.",
+      "modules": [
+        "ThetaModes",
+        "ThetaDerivativeSeries"
+      ],
+      "theorems": [
+        "thetaDensity_hasSum_polynomialDerivative",
+        "polynomialDerivative_thetaDensity_eq_tsum"
+      ]
+    },
+    {
+      "label": "deriv:laguerre-moment",
+      "result": "Lemma 4.3",
+      "statement": "The coefficient-uniform Laguerre moment-ratio bound with exponent 4m+6.",
+      "modules": [
+        "Laguerre"
+      ],
+      "theorems": [
+        "thetaDeriv_laguerre_moment_ratio"
+      ]
+    },
+    {
+      "label": "deriv:first-mode-tail",
+      "result": "Lemma 4.4",
+      "statement": "Tail bound for the first-mode distribution.",
+      "modules": [
+        "ThetaConcentration"
+      ],
+      "theorems": [
+        "firstMode_derivative_survival"
+      ]
+    },
+    {
+      "label": "deriv:full-tail",
+      "result": "Lemma 4.5",
+      "statement": "Concentration of the exterior tail of the full theta series near both endpoints, and the moment bounds.",
+      "modules": [
+        "ThetaConcentration",
+        "ThetaDerivativeSeries"
+      ],
+      "theorems": [
+        "thetaModesTailLp_ae_eq",
+        "fullTheta_derivative_survival",
+        "fullTheta_derivative_tail_bound",
+        "thetaDerivLeftTail_survival"
+      ]
+    },
+    {
+      "label": "deriv:weighted-l1",
+      "result": "Corollary 4.6",
+      "statement": "Weighted L1 bounds for the two exterior tails.",
+      "modules": [
+        "ThetaDerivTailMoments",
+        "ThetaDerivSourceLocalization"
+      ],
+      "theorems": [
+        "thetaDerivRightTail_weighted_l1",
+        "thetaDerivLeftTail_weighted_l1",
+        "thetaDerivTails_weighted_l1"
+      ]
+    },
+    {
+      "label": "deriv:log-uncertainty",
+      "result": "Lemma 4.7",
+      "statement": "The logarithmic uncertainty inequality for nonzero L1 and L2 functions.",
+      "modules": [
+        "LogUncertainty"
+      ],
+      "theorems": [
+        "LogUncertainty.fourier_log_uncertainty_extended"
+      ]
+    },
+    {
+      "label": "deriv:archimedean",
+      "result": "Lemma 4.8",
+      "statement": "Lower bound for the archimedean term, including the interaction between the two tails.",
+      "modules": [
+        "Archimedean",
+        "ShiftParseval",
+        "GammaCrossMagnitude",
+        "GammaCross",
+        "ThetaDerivSector"
+      ],
+      "theorems": [
+        "thetaDerivTails_archimedean_lower"
+      ]
+    },
+    {
+      "label": "deriv:pole-primes",
+      "result": "Lemma 4.9",
+      "statement": "Bound for the pole term and the full prime sum, with absolute convergence.",
+      "modules": [
+        "ThetaDerivPrimeSums",
+        "ThetaDerivPolePrimes",
+        "ThetaDerivSourceLocalization",
+        "ComplexPrimeSeries"
+      ],
+      "theorems": [
+        "pole_prime_bound_of_twoTail",
+        "thetaDerivTails_pole_prime_bound",
+        "thetaDeriv_exteriorTail_complexPrime",
+        "thetaDerivTails_pole_complexPrime_bound"
+      ]
+    }
+  ]
+}
