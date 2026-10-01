@@ -1,6 +1,6 @@
 {
   "description": "SHA-256 hashes of every Lean source imported by ThetaTrial.Paper. The verification script checks the sources against this list before building.",
-  "paper_sha256": "fa4beb3a31b7e95b0a26520eaa44799777f94d36c85aba6271c19ec2fc94b556",
+  "paper_sha256": "553868126be96c7e8fb8cecbeaef88ad0c0a7e4d54d0aec632e64b794e59d9d3",
   "lean_toolchain": "leanprover/lean4:v4.33.0",
   "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
   "entry_point": "ThetaTrial.Paper",
